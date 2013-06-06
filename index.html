@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="description" content="www.downehr.se" />
+	<title>downehr.se</title>
+<link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+<style>
+/*
+			COMPUTER
+			screen_base01 = outer shell
+			screen_base02 = actual screen
+			screen_stand = black box under screen
+			screen_stand01-02 = white boxes on top of "screen_stand", top ones
+			screen_stand03-04 = white boxes on top of "screen_stand", lower ones
+*/
+.computer{
+	position: relative;
+}
+.screen_base01{
+	width: 1280px;
+	height: 720px;
+	border-radius:20px;
+	background:#000;
+}
+.screen_base02{
+	width: 1230px;
+	height:670px;
+	border-radius: 10px;
+	background:#fff;
+	margin: 25px 25px 25px 25px;
+	position: absolute;
+}
+.screen_stand{
+	width: 1280px;
+	height: 120px;
+	background: #000;
+	position: relative;
+}
+.screen_stand01{
+	width: 480px;
+	height: 100px;
+	position: absolute;
+	background: #fff;
+	border-radius: 10px;
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 10px;
+	border-top-right-radius: 10px;
+}
+.screen_stand02{
+	width: 480px;
+	height: 100px;
+	position: absolute;
+	right: 0px;
+	background: #fff;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 0px;
+	border-top-right-radius: 0px;
+}
+.screen_stand03{
+	width: 120px;
+	height: 20px;
+	position: absolute;
+	background: #fff;
+	bottom: 0px;
+}
+.screen_stand04{
+	width: 120px;
+	height: 20px;
+	position: absolute;
+	background: #fff;
+	bottom: 0px;
+	right: 0px;
+}
+.screen_text{
+	font-size: 192px;
+	text-align: center;
+}
+/*
+		PHONES (both)
+		casing = the outer shell
+		phone_screen = the screen
+		phone_taskbar = the grey taskbar at the top
+		phone_signal = placement of the service bars
+
+		PHONE # 1 (colour)
+		phone_bar01-04 = service bars
+		phone_battery = battery placement
+		phone_battery01-02 = battery colours
+		
+		PHONE # 2 (simple)
+		phone_bar05-07 = service bars
+		phone_battery2 = battery placement
+		phone_battery03-04 = battery colours
+*/
+
+/*
+			BOTH PHONES
+*/
+.phone{
+	position: relative;
+	float: left;
+	margin-left: 25px;
+}
+.casing{
+	width: 320px;
+	height: 600px;
+	background: #000;
+	border-radius: 35px;
+	position: relative;
+	border: 2px #ccc solid;
+	box-shadow: 1px 1px 4px #000;
+}
+.phone_screen{
+	width: 280px;
+	height: 490px;
+	position: absolute;
+	background: #fff;
+	margin: 60px 20px 60px 20px;
+	border-radius: 5px;
+}
+.phone_taskbar{
+	width: 280px;
+	height: 30px;
+	position: relative;
+	background: #333; 
+}
+.phone_signal{
+	position: absolute;
+	width: 60px;
+	height: 30px;
+}
+.phone_text{
+	font-size: 142px;
+	text-align: center;
+}
+/*
+			PHONE # 1
+*/
+.phone_bar01{
+	position: absolute;
+	width: 8px;
+	height: 10px;
+	background: #be3;
+	margin: 15px 0 0 10px;
+}
+.phone_bar02{
+	position: absolute;
+	width: 8px;
+	height: 14px;
+	background: #be3;
+	margin: 11px 0 0 20px;
+}
+.phone_bar03{
+	position: absolute;
+	width: 8px;
+	height: 18px;
+	background: #be3;
+	margin: 7px 0 0 30px;
+}
+.phone_bar04{
+	position: absolute;
+	width: 8px;
+	height: 22px;
+	background: #666;
+	margin: 3px 0 0 40px;
+}
+.phone_battery{
+	position: absolute;
+	right: 44px;
+	width: 40px;
+	height: 16px;
+	margin: 7px 0 0 0;
+}
+.phone_battery01{
+	position: absolute;
+	width: 30px;
+	height: 14px;
+	background: #00d733; /* Fix for older browsers that don't handle gradients */
+	background: linear-gradient(to bottom, #8dc63f 0%, #00d733 47%, #089a00 100%);
+	/* Added gradient to make battery look round */
+	margin:1px 0 1px 1px;
+	border-top-left-radius: 1px;
+	border-bottom-left-radius: 1px;
+	border-top-right-radius: 2px;
+	border-bottom-right-radius: 2px;
+}
+.phone_battery02{
+	position: absolute;
+	right: 5px;
+	width: 4px;
+	height: 8px;
+	background: #00d733; /* Fix for older browsers that don't handle gradients */
+	background: linear-gradient(to bottom, #8dc63f 0%, #00d733 47%, #089a00 100%);
+	/* Added gradient to make battery look round */
+	margin: 4px 0;
+	border-top-right-radius: 2px;
+	border-bottom-right-radius: 2px;
+}
+.phone_clock{
+	position: absolute;
+	right: 10px;
+	color: #ccc;
+	margin: 6px 0 0 0;
+	font-family: 'Droid Sans', Courier, sans-serif;
+}
+/*
+			PHONE # 2
+*/
+.phone_bar05{
+	position: absolute;
+	width: 8px;
+	height: 10px;
+	background: #ccc;
+	margin: 14px 0 0 10px;
+}
+.phone_bar06{
+	position: absolute;
+	width: 8px;
+	height: 14px;
+	background: #ccc;
+	margin: 10px 0 0 20px;
+}
+.phone_bar07{
+	position: absolute;
+	width: 8px;
+	height: 18px;
+	background: #ccc;
+	margin: 6px 0 0 30px;
+}
+.phone_battery2{
+	position: absolute;
+	right: 8px;
+	width: 40px;
+	height: 16px;
+	margin: 8px 0 0 0;
+}
+.phone_battery03{
+	position: absolute;
+	width: 30px;
+	height: 14px;
+	background: #ccc;
+	background: linear-gradient(to bottom, #ccc 0%, #ccc 47%, #888 100%);
+	margin:1px 0 1px 1px;
+	border-top-left-radius: 1px;
+	border-bottom-left-radius: 1px;
+	border-top-right-radius: 2px;
+	border-bottom-right-radius: 2px;
+}
+.phone_battery04{
+	position: absolute;
+	right: 5px;
+	width: 4px;
+	height: 8px;
+	background: #ccc;
+	margin: 4px 0;
+	border-top-right-radius: 2px;
+	border-bottom-right-radius: 2px;
+}
+</style>
+</head>
+<body>
+
+<div class="computer">
+
+	<div class="screen_base01">
+		<div class="screen_base02">
+			<!--CONTENT HERE-->
+			<p class="screen_text">?</p>
+			<!--CONTENT HERE-->
+		</div>
+	</div>
+	<div class="screen_stand">
+		<div class="screen_stand01"></div>
+		<div class="screen_stand02"></div>
+		<div class="screen_stand03"></div>
+		<div class="screen_stand04"></div>
+	</div>
+
+</div>
+
+<br /><!-- break --><br />
+
+<div class="phone">
+
+	<div class="casing">
+		<div class="phone_screen">
+		<div class="phone_taskbar">
+			<div class="phone_signal">
+				<div class="phone_bar05"></div>
+				<div class="phone_bar06"></div>
+				<div class="phone_bar07"></div>
+			</div>
+			<div class="phone_battery2">
+				<div class="phone_battery03"></div>
+				<div class="phone_battery04"></div>
+			</div>
+			
+
+		</div>
+		<!--CONTENT HERE-->
+		<p class="phone_text">?</p>
+		<!--CONTENT HERE-->
+		</div>
+	</div>
+
+</div>
+
+<div class="phone">
+
+	<div class="casing">
+		<div class="phone_screen">
+		<div class="phone_taskbar">
+			<div class="phone_signal">
+				<div class="phone_bar01"></div>
+				<div class="phone_bar02"></div>
+				<div class="phone_bar03"></div>
+				<div class="phone_bar04"></div>
+			</div>
+			<div class="phone_battery">
+				<div class="phone_battery01"></div>
+				<div class="phone_battery02"></div>
+			</div>
+			<div class="phone_clock" id="clock"></div>
+
+		</div>
+		<!--CONTENT HERE-->
+		<p class="phone_text">?</p>
+		<!--CONTENT HERE-->
+		</div>
+	</div>
+
+</div>
+<script>
+function startclock()
+{
+
+var thetime=new Date();
+var nhours=thetime.getHours();
+var nmins=thetime.getMinutes();
+var nsecn=thetime.getSeconds();
+var AorP = (nhours >= 12) ? "P.M." : "A.M.";
+if (nhours>=13)
+  nhours-=12;
+if (nhours<1)
+ nhours=12;
+if (nsecn<10)
+ nsecn="0"+nsecn;
+if (nmins<10)
+ nmins="0"+nmins;
+ 
+var clock_span = document.getElementById("clock");
+clock_span.innerHTML = nhours+":"+nmins;
+
+setTimeout('startclock()',1000);
+} 
+
+if (document.getElementById && document.createTextNode) {
+  startclock();
+}
+</script>
+</body>
+</html>
