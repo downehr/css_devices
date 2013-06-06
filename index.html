@@ -102,7 +102,7 @@
 .phone{
 	position: relative;
 	float: left;
-	margin-left: 25px;
+	margin: 0 0 20px 25px;
 }
 .casing{
 	width: 320px;
@@ -138,6 +138,7 @@
 }
 /*
 			PHONE # 1
+			COLOUR
 */
 .phone_bar01{
 	position: absolute;
@@ -169,7 +170,7 @@
 }
 .phone_battery{
 	position: absolute;
-	right: 44px;
+	right: 48px;
 	width: 40px;
 	height: 16px;
 	margin: 7px 0 0 0;
@@ -201,13 +202,14 @@
 }
 .phone_clock{
 	position: absolute;
-	right: 10px;
+	right: 8px;
 	color: #ccc;
 	margin: 6px 0 0 0;
 	font-family: 'Droid Sans', Courier, sans-serif;
 }
 /*
 			PHONE # 2
+			SIMPLE
 */
 .phone_bar05{
 	position: absolute;
@@ -241,8 +243,9 @@
 	position: absolute;
 	width: 30px;
 	height: 14px;
-	background: #ccc;
+	background: #ccc; /* Fix for older browsers that don't handle gradients */
 	background: linear-gradient(to bottom, #ccc 0%, #ccc 47%, #888 100%);
+	/* Added gradient to make battery look round */
 	margin:1px 0 1px 1px;
 	border-top-left-radius: 1px;
 	border-bottom-left-radius: 1px;
